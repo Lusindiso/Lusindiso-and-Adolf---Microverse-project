@@ -7,6 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    Hello World, we are software developers.
+    <header>
+        <h1 id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="#" id="surver-form">
+        <label for="name">Name
+            <input type="text" id="name" required placeholder="Enter your name">
+        </label>
+        <label for="email">Email
+            <input type="email" class="email" required placeholder="Enter your email" >
+        </label>
+        <label for="number">Age(optional)
+            <input type="number" min="16" max="99" id="number" placeholder="Age">
+        </label>
+        <label>
+            Which option best describes your current role?
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+        </label>
+        <label for="definitely"><input type="radio" id="definitely" name="recommend">Definitely</label>
+        <label for="Maybe"><input type="radio" id="maybe" name="recommend">Maybe</label>
+        <label for="notsure"><input type="radio" id="notsure" name="recommend">Not sure</label>
+        <label>
+            What is your favorite feature of freeCodeCamp?
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="student">Challenges</option>
+              <option value="job">Projects</option>
+              <option value="learner">Community</option>
+              <option value="preferNo">Open Source</option>
+            </select>
+        </label>
+        <label for="front-end"><input type="checkbox" id="front-end" name="improve">Front-end Projects</label>
+        <label for="back-end"><input type="checkbox" id="back-end" name="improve">Back-end Projects</label>
+        <label for="data"><input type="checkbox" id="data" name="improve">Data Visualization</label>
+        <label for="challenges"><input type="checkbox" id="challenges" name="improve">Challenges</label>
+        <label for="open-source"><input type="checkbox" id="open-source" name="improve">Open Source Community</label>
+        <label for="gitter"><input type="checkbox" id="gitter" name="improve">Gitter help rooms</label>
+        <label for="videos"><input type="checkbox" id="videos" name="improve">Videos</label>
+        <label for="city"><input type="checkbox" id="city" name="improve">City Meetups</label>
+        <label for="wiki"><input type="checkbox" id="wiki" name="improve">Wiki</label>
+        <label for="forum"><input type="checkbox" id="forum" name="improve">Forum</label>
+        <label for="additional"><input type="checkbox" id="additional" name="improve">Additional Courses</label>
+        <label for="comment">Any comments or suggestions?<textarea name="comment" id="comment" cols="30" rows="10">Enter your comment here...</textarea></label>
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
